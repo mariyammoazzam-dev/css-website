@@ -13,14 +13,6 @@ body{
     color:#333;
 }
 
-header{
-    background:#670f56;
-    color:white;
-    padding:15px 50px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
 .logo{
     font-size:28px;
     font-weight:bold;
@@ -75,9 +67,4 @@ nav ul li a{
     margin-bottom:15px;
 }
 
-footer{
-    background:#651212;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
+
