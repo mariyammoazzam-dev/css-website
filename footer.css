@@ -1,6 +1,9 @@
-footer{
-    background:#651212;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
+}footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}@media (max-width: 768px) {
+    #hero {
+        padding: 60px 15px;
+
