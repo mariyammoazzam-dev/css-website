@@ -45,7 +45,7 @@ nav ul li a:hover{
     url("images/engineer.png");
     background-size:cover;
     background-position:center;
-    color:white;rgba(37, 36, 36, 0.934);
+    color:white;rgba (37, 36, 36, 0.934);
     text-align:center;
     padding:120px 20px;
 }
