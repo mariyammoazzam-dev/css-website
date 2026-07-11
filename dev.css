@@ -91,13 +91,14 @@ h2{
 }
 
 .card{
-    background:rgb(60, 109, 111);
+    background:rgb(59, 219, 224);
     width:300px;
     min-height: 250px;
     padding:30px;
     border-radius:12px;
-    box-shadow:0 0 20px rgba(220,220,220,0.1);
+    box-shadow:0 0 20px rgba(255, 255, 255, 0.1);
     text-align:center;
+    color: aliceblue;
 }
 
 .card:hover{
@@ -106,7 +107,7 @@ h2{
 
 .card h3{
     margin-bottom:15px;
-    color:#0f172a
+    color:#101112
 }
 
 /* Statistics */
