@@ -5,4 +5,6 @@
 
 # Basic css classes  , styling properties font size , border radius  ,background , box- shadow etc
 
-# Basic javascript sum / subtraction , multiplication , console.log(name)
+# Basic javascript sum / subtraction , multiplication , console.log(nameg)
+
+# make insta page login
