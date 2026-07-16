@@ -8,3 +8,9 @@
 # Basic javascript sum / subtraction , multiplication , console.log(nameg)
 
 # make insta page login
+
+
+
+# Create Cards using HTML and CSSS
+
+# JS concept const , var  ,let
