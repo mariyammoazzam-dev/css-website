@@ -44,7 +44,7 @@ console.log("ANSWER,",websiteInfo);
 
 var bookTitle= "Harry Potter";
 var bookText="Friendship, Magic and Adventure";
-var bookInfo= bookText /bookTitle;
+var bookInfo= bookText + bookTitle;
 
 console.log("ANSWER,",bookInfo);
 
@@ -61,3 +61,10 @@ var hobby="Web Development";
 var introduction= name + " likes " + hobby;
 
 console.log("ANSWER,", introduction);
+
+
+
+
+
+
+
