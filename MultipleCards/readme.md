@@ -69,3 +69,8 @@ Easy memory trick
 || = OR = One YES is enough
 ! = NOT = Opposite answer
 
+
+
+// Functions 
+// processing / calculation 
+// break code in smaller portions
