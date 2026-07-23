@@ -15,19 +15,28 @@
 
         <form>
             <div class="input-group">
-                <input type="text" placeholder="Full Name" >
+                <input type="text"
+                 placeholder="Full Name" 
+                onchange= "InputChangeHandler(this.value)"
+                required >
             </div>
 
             <div class="input-group">
-                <input type="email" placeholder="Email Address" required>
+                <input type="email"
+                placeholder="Email Address"
+                onchange="EmailverifyHandler (this.value)" required>
             </div>
 
             <div class="input-group">
-                <input type="password" placeholder="Password" required>
+                <input type="password"
+                 placeholder="Password"
+                 onchange="PasswordCheckerHandler (this.value)" required>
             </div>
 
             <div class="input-group">
-                <input type="password" placeholder="Confirm Password" required>
+                <input type="password"
+                 placeholder="Confirm Password"
+                 onchange="ConfirmPasswordHandler (this.value)"required>
             </div>
 
             <button type="submit">Create Account</button>
@@ -37,4 +46,77 @@
     </div>
 
 </body>
+<script>
+
+    let checktext="MaryamMoazzam";
+
+
+    const InputChangeHandler =(value)=> {
+    console.log("WORKING" , value);
+
+    if(value === checktext){
+    console.log("value matched");
+     alert("VALUE MATCHED");
+    }else{
+        console.log("WRONG MATCHED");
+    }
+
+    }
+
+
+let verifyemail= "maryammoazzam456@gmail.com";
+const EmailverifyHandler= (email) => {
+    console.log("verify" , email);
+
+    if(email === verifyemail){
+        console.log("email matched");
+        alert("EMAIL MATCHED")
+    }else{
+        console.log("NOT VERIFIED");
+    }
+
+}
+
+let passwordChange= 98562;
+
+const PasswordCheckerHandler = (password) => {
+    console.log("check" , password);
+
+    if(password == passwordChange) {
+        console.log("matched", password);
+    alert("MATCHED PASSWORD");
+}else {
+    console.log("Wrong", password);
+    alert("WRONG PASSWORD"); 
+
+}
+
+}
+
+
+let confirmPasswordcheck = 98562;
+
+
+const ConfirmPasswordHandler =(ConfirmPassword) => {
+    console.log("check",ConfirmPassword,  confirmPasswordcheck)
+
+    if(Number(ConfirmPassword) === confirmPasswordcheck){
+        console.log("confirmPassword matched");
+
+        alert("MATCHED");
+
+    }else{
+        console.log("unmatched");
+    }
+}
+
+</script>
+
+
+
+
+
+<!-- email and password IF COndition ALERT -->
+ <!-- full name  only console -->
 </html>  
+

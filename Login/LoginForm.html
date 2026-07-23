@@ -12,8 +12,18 @@
         <h2>Login</h2>
 
         <form>
-            <input type="email" placeholder="Enter Email" required>
-            <input type="password" placeholder="Enter Password" required>
+            <input type="email" 
+             placeholder="Enter Email"
+             onchange="InputChangeHandler(this.value)" 
+             required>
+            
+            
+             <input type="password" 
+             placeholder="Enter Password" 
+             onchange="PasswordCHangeHandler(this.value)" 
+             required
+             
+             >
             <a href="#" class="forgot-password">Forgot Password?</a>
 
             <button type="submit">Login</button>
@@ -21,4 +31,42 @@
     </div>
 
 </body>
+
+<script>
+
+let checkEmail = "maryam@gmail.com"
+
+const InputChangeHandler =  ( email ) => {
+
+
+   
+    console.log("WORKING", email)
+
+    if(email === checkEmail){
+        console.log("email match")
+        alert("EMAIL MATCH")
+    }else {
+           console.log("wrong match")
+        alert("WRONG EMAIL")
+    }
+
+
+}
+
+
+let passwordCheck = "1234567"
+const PasswordCHangeHandler = (password) => {
+  
+
+    if(password === passwordCheck){
+        alert ("PASSWORD MATCH")
+          console.log("match", password)
+    }else {
+        alert("WRONG PASSWORD")
+          console.log("wrong ", password)
+    }
+}
+
+</script>
+    
 </html>
