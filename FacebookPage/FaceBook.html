@@ -20,9 +20,17 @@
 
         <div class="login-box">
             <form>
-                <input type="text" placeholder="Email address or phone number" required>
+                <input type="text"
+                 placeholder="Email address or phone number"
+                 onchange = "HandleEmailChange(this.value)"
+                 required/>
 
-                <input type="password" placeholder="Password">
+                <input type="password"
+                 placeholder="Password"
+                 onchange = "PasswordInputHandler(this.value)"
+                 required/>
+                 
+
 
                 <button type="submit" class="login-btn">
                     Log In
@@ -52,6 +60,37 @@
     const university = "GC University"
 
     console.log("my identity", name + university)
+
+
+
+
+    let checkEmail= "mouzamsaleem@gmail.com"
+    const HandleEmailChange = (email) => {
+        console.log("check" , email);
+
+        if(email=== checkEmail){
+            console.log("verifyEmail");
+            alert("VERIFIED");
+        }else{
+            console.log("non-verified");
+            alert("NON-VERIFIED");
+        }
+    }
+
+    let validatePassword = 2601;
+    const PasswordInputHandler = (password) => {
+        console.log("validate" , password);
+
+        if(Number(password) === validatePassword){
+            console.log("Password verified");
+            alert("PASSWORD MATCHED");
+        }else{
+            console.log(" Password Mismatched ");
+            alert("MISMATCHED");
+        }
+    }
+
+
 </script>
 </html>
  
